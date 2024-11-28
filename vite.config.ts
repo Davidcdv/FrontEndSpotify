@@ -10,6 +10,7 @@ export default defineConfig({
 		},
 	},
 	server: {
+		host: '0.0.0.0',  // Make sure Vite listens on all network interfaces
 		port: 3000,
 	},
 });
