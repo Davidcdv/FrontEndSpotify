@@ -21,8 +21,8 @@ interface ChatStore {
 	fetchMessages: (userId: string) => Promise<void>;
 	setSelectedUser: (user: User | null) => void;
 }
-
-const baseURL = import.meta.env.MODE === "development" ? "https://backendspotify-h8e5.onrender.com" : "/";
+const baseURL = "https://backendspotify-h8e5.onrender.com";
+// const baseURL = import.meta.env.MODE === "development" ? "https://backendspotify-h8e5.onrender.com" : "/";
 
 const socket = io(baseURL, {
 	autoConnect: false, // only connect if user is authenticated
